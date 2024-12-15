@@ -1,0 +1,10 @@
+Options -Indexes
+
+RewriteEngine On
+
+# Kiểm tra nếu tệp hoặc thư mục không tồn tại
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Chuyển hướng đến trang 404
+RewriteRule . view/page/404/index.php [L]

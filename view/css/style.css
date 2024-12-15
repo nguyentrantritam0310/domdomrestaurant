@@ -1,0 +1,43 @@
+:root {
+    --primary-color: #FFA726;
+    --secondary-color: #EF5350;
+    --third-color: #FFF9C4;
+    --fourth-color: #795548;
+    --fifth-color: #66BB6A;
+}
+
+/* @font-face {
+    font-family: "iCiel Stormtrooper";
+    src: url("fonts/iCiel-Stormtrooper-Regular.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+} */
+
+.nav-link {
+    font-weight: 600 !important;
+    transition: color 0.25s;
+}
+
+.content-home h1 {
+    color: #F9E79F !important;
+    text-shadow: 5px 4px 1px var(--fifth-color);
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: white;
+}
+
+.modalCart .modal-title, .modalUser .modal-title {
+    color: #E67E22 !important;
+}
+
+.product-category {
+    position: relative;
+}
+
+.title-product {
+    opacity: 0;
+    transition: all 0.25s linear;
+}
+
+.product-category:hover .title-product {
+    opacity: 1;
+}
